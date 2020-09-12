@@ -1,7 +1,7 @@
 ﻿{
     "$schema": "http://json.schemastore.org/template",
     "author": "Jeevan James",
-    "classifications": [ "Jeevan", "UnitTest" ],
+    "classifications": [ "Jeevan", "Test", "Unit" ],
     "name": "Jeevan Unit Test",
     "identity": "Jeevan Unit Test.CSharp",
     "groupIdentity": "Jeevan.Unit.Test",
