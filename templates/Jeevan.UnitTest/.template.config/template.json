@@ -1,0 +1,23 @@
+﻿{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Jeevan James",
+    "classifications": [ "Jeevan", "UnitTest" ],
+    "name": "Jeevan Unit Test",
+    "identity": "Jeevan Unit Test.CSharp",
+    "groupIdentity": "Jeevan.Unit.Test",
+    "shortName": "jeevan-unit-test",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "Jeevan.UnitTest",
+    "preferNameDirectory": true,
+    "symbols": {
+        "relativens": {
+            "type": "parameter",
+            "isRequired": true,
+            "replaces": "SymbolNamespace",
+            "description": "The namespace of this project, relative to the base namespace specified in the Directory.Build.props file."
+        }
+    }
+}

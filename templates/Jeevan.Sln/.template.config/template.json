@@ -1,0 +1,23 @@
+﻿{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Jeevan James",
+    "classifications": [ "Jeevan", "Solution" ],
+    "name": "Jeevan Solution",
+    "identity": "Jeevan Solution",
+    "groupIdentity": "Jeevan.Solution",
+    "shortName": "jeevan-sln",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "Jeevan.Sln",
+    "preferNameDirectory": true,
+    "symbols": {
+        "basens": {
+            "type": "parameter",
+            "isRequired": true,
+            "replaces": "SymbolNamespace",
+            "description": "The base namespace for all projects in this solution."
+        }
+    }
+}

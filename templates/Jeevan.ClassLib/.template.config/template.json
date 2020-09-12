@@ -1,0 +1,23 @@
+﻿{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Jeevan James",
+    "classifications": [ "Jeevan", "Library" ],
+    "name": "Jeevan Class Library",
+    "identity": "Jeevan Class Library.CSharp",
+    "groupIdentity": "Jeevan.Class.Library",
+    "shortName": "jeevan-classlib",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "Jeevan.ClassLib",
+    "preferNameDirectory": true,
+    "symbols": {
+        "relativens": {
+            "type": "parameter",
+            "isRequired": true,
+            "replaces": "SymbolNamespace",
+            "description": "The namespace of this project, relative to the base namespace specified in the Directory.Build.props file."
+        }
+    }
+}

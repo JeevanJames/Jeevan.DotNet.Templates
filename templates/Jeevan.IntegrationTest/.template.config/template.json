@@ -1,0 +1,23 @@
+﻿{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Jeevan James",
+    "classifications": [ "Jeevan", "IntegrationTest" ],
+    "name": "Jeevan Integration Test",
+    "identity": "Jeevan Integration Test.CSharp",
+    "groupIdentity": "Jeevan.Integration.Test",
+    "shortName": "jeevan-integration-test",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "Jeevan.IntegrationTest",
+    "preferNameDirectory": true,
+    "symbols": {
+        "relativens": {
+            "type": "parameter",
+            "isRequired": true,
+            "replaces": "SymbolNamespace",
+            "description": "The namespace of this project, relative to the base namespace specified in the Directory.Build.props file."
+        }
+    }
+}
