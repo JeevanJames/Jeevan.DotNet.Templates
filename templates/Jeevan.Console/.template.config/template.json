@@ -1,16 +1,16 @@
 ﻿{
     "$schema": "http://json.schemastore.org/template",
     "author": "Jeevan James",
-    "classifications": [ "Jeevan", "Test", "Integration" ],
-    "name": "Jeevan Integration Test",
-    "identity": "Jeevan Integration Test.CSharp",
-    "groupIdentity": "Jeevan.Integration.Test",
-    "shortName": "jeevan-integration-test",
+    "classifications": [ "Jeevan", "Console" ],
+    "name": "Jeevan Console",
+    "identity": "Jeevan.Console.CSharp",
+    "groupIdentity": "Jeevan.Console",
+    "shortName": "jeevan-console",
     "tags": {
         "language": "C#",
         "type": "project"
     },
-    "sourceName": "Jeevan.IntegrationTest",
+    "sourceName": "Jeevan.Console",
     "preferNameDirectory": true,
     "symbols": {
         "relativens": {
@@ -23,8 +23,8 @@
             "type": "parameter",
             "isRequired": false,
             "replaces": "SymbolDescription",
-            "defaultValue": "Integration test project",
-            "description": "Description of the integration test project."
+            "defaultValue": "Console application",
+            "description": "Description of the console application."
         }
     }
 }

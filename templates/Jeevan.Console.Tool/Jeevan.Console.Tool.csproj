@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>$(BaseNamespace).SymbolNamespace</RootNamespace>
+        <AssemblyName>SymbolToolName</AssemblyName>
+        <DocumentationFile>Properties\$(AssemblyName).xml</DocumentationFile>
+        <Description>SymbolDescription</Description>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Tool|AnyCPU'">
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>SymbolToolName</ToolCommandName>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Tool|AnyCPU'">
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>SymbolToolName</ToolCommandName>
+    </PropertyGroup>
+
+</Project>

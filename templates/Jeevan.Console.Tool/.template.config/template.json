@@ -1,16 +1,16 @@
 ﻿{
     "$schema": "http://json.schemastore.org/template",
     "author": "Jeevan James",
-    "classifications": [ "Jeevan", "Test", "Integration" ],
-    "name": "Jeevan Integration Test",
-    "identity": "Jeevan Integration Test.CSharp",
-    "groupIdentity": "Jeevan.Integration.Test",
-    "shortName": "jeevan-integration-test",
+    "classifications": [ "Jeevan", "Console", "Tool" ],
+    "name": "Jeevan Console Tool",
+    "identity": "Jeevan.Console.Tool.CSharp",
+    "groupIdentity": "Jeevan.Console.Tool",
+    "shortName": "jeevan-console-tool",
     "tags": {
         "language": "C#",
         "type": "project"
     },
-    "sourceName": "Jeevan.IntegrationTest",
+    "sourceName": "Jeevan.Console.Tool",
     "preferNameDirectory": true,
     "symbols": {
         "relativens": {
@@ -19,12 +19,18 @@
             "replaces": "SymbolNamespace",
             "description": "The namespace of this project, relative to the base namespace specified in the Directory.Build.props file."
         },
+        "tool-name": {
+            "type": "parameter",
+            "isRequired": true,
+            "replaces": "SymbolToolName",
+            "description": "The name of the tool."
+        },
         "description": {
             "type": "parameter",
             "isRequired": false,
             "replaces": "SymbolDescription",
-            "defaultValue": "Integration test project",
-            "description": "Description of the integration test project."
+            "defaultValue": ".NET Core tool console application",
+            "description": "Description of the console tool application."
         }
     }
 }

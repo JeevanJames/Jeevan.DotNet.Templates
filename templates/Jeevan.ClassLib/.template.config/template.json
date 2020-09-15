@@ -18,6 +18,13 @@
             "isRequired": true,
             "replaces": "SymbolNamespace",
             "description": "The namespace of this project, relative to the base namespace specified in the Directory.Build.props file."
+        },
+        "description": {
+            "type": "parameter",
+            "isRequired": false,
+            "replaces": "SymbolDescription",
+            "defaultValue": "Class library",
+            "description": "Description of the class library."
         }
     }
 }

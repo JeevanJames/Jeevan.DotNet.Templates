@@ -5,7 +5,7 @@
         <RootNamespace>$(BaseNamespace).SymbolNamespace</RootNamespace>
         <AssemblyName>$(RootNamespace)</AssemblyName>
         <DocumentationFile>Properties\$(AssemblyName).xml</DocumentationFile>
-        <Description>Jeevan James</Description>
+        <Description>SymbolDescription</Description>
     </PropertyGroup>
 
 </Project>
