@@ -9,6 +9,16 @@ Uninstall templates | `dotnet new -u Jeevan.Templates`
 
 ## Template reference
 
+```
+## Common arguments
+
+# For solution (jeevan-sln)
+--basens, -b (Required): The base namespace for all projects in this solution. Set as a variable in the `Directory.Build.props` file, so that projects can use it as the base to define their root namespace.
+
+# For project templates (jeevan-console, jeevan-classlib, etc)
+--relativens, -r (Required): The namespace of the project relative to the base namespace specified at the solution level.
+```
+
 ### .NET Core solution (`jeevan-sln`)
 Creates a solution with supporting files such as `.editorconfig`, `Directory.Build.props`, `.gitignore`, Cake Build files, etc. Also creates two subdirectories - `src` and `test`.
 
@@ -19,8 +29,6 @@ dotnet new jeevan-sln --basens <base namespace>
 dotnet new jeevan-sln --basens Jeevan.MyNamespace
 dotnet new jeevan-sln -n LibraryManager -o . -b Jeevan.LibraryManager
 ```
-
-`--basens`, `-b` (Required): The base namespace for all projects in this solution. Set as a variable in the `Directory.Build.props` file, so that projects can use it as the base to define their root namespace.
 
 ### Console application (`jeevan-console`)
 Creates a regular console project.
