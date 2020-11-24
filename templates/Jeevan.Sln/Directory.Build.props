@@ -15,15 +15,21 @@
         <Version>0.1.0</Version>
         <Authors>Jeevan James</Authors>
         <Company>Jeevan James</Company>
-        <Product>Jeevan James</Product>
+        <Product>[ENTER PRODUCT NAME HERE]</Product>
         <Copyright>Copyright (c) 2020 Jeevan James</Copyright>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/JeevanJames/[PROJECT NAME]</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/JeevanJames/[PROJECT NAME].git</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
+        <PackageTags>[TAGS]</PackageTags>
         <NeutralLanguage>en-US</NeutralLanguage>
 
         <!-- SourceLink properties-->
-        <!-- <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder> -->
+        <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
         <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)Jeevan.Sln.ruleset</CodeAnalysisRuleSet>
     </PropertyGroup>
@@ -33,7 +39,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.0">
+        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.1">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
@@ -41,7 +51,7 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="SonarAnalyzer.CSharp" Version="8.6.0.16497">
+        <PackageReference Include="SonarAnalyzer.CSharp" Version="8.15.0.24505">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
