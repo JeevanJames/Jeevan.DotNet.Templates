@@ -1,0 +1,9 @@
+<Project>
+
+    <PropertyGroup>
+        <BaseNamespace>SymbolNamespace</BaseNamespace>
+        <Product>SymbolProduct</Product>
+        <RepositoryName>SymbolRepository</RepositoryName>
+    </PropertyGroup>
+
+</Project>

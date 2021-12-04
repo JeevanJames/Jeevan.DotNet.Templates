@@ -25,6 +25,13 @@
             "replaces": "SymbolDescription",
             "defaultValue": "Console application",
             "description": "Description of the console application."
+        },
+        "framework": {
+            "type": "parameter",
+            "isRequired": false,
+            "replaces": "SymbolFramework",
+            "defaultValue": "net6.0",
+            "description": "Target framework for the console application."
         }
     }
 }

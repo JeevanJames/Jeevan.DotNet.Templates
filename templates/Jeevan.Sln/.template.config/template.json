@@ -18,6 +18,18 @@
             "isRequired": true,
             "replaces": "SymbolNamespace",
             "description": "The base namespace for all projects in this solution."
+        },
+        "product": {
+            "type": "parameter",
+            "isRequired": true,
+            "replaces": "SymbolProduct",
+            "description": "The descriptive product name for this solution."
+        },
+        "repository": {
+            "type": "parameter",
+            "isRequired": true,
+            "replaces": "SymbolRepository",
+            "description": "The repository name for this solution."
         }
     }
 }

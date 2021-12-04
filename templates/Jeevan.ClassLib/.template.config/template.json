@@ -25,6 +25,13 @@
             "replaces": "SymbolDescription",
             "defaultValue": "Class library",
             "description": "Description of the class library."
+        },
+        "tfm": {
+            "type": "parameter",
+            "isRequired": false,
+            "replaces": "SymbolTfm",
+            "defaultValue": "netstandard2.0",
+            "description": "Target framework moniker for the class library."
         }
     }
 }

@@ -1,30 +1,31 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <PackageType>Template</PackageType>
-    <PackageId>Jeevan.Templates</PackageId>
-    <Version>0.1.0</Version>
-    <Title>Jeevan dotnet new templates</Title>
-    <Description>Custom dotnet new templates for Jeevan's projects.</Description>
-    <Authors>Jeevan James</Authors>
-    <Company>Jeevan James</Company>
-    <Product>Jeevan dotnet new templates</Product>
-    <Copyright>Copyright (c) 2020 Jeevan James</Copyright>
-    <PackageTags>dotnet-new;templates;jeevan</PackageTags>
+    <PropertyGroup>
+        <!-- Package metadata -->
+        <PackageType>Template</PackageType>
+        <PackageId>Jeevan.Templates</PackageId>
+        <Version>0.1.0</Version>
+        <Title>Jeevan dotnet new templates</Title>
+        <Description>Custom dotnet new templates for Jeevan's projects.</Description>
+        <Authors>Jeevan James</Authors>
+        <Company>Jeevan James</Company>
+        <Product>Jeevan dotnet new templates</Product>
+        <Copyright>Copyright (c) 2020-2021 Jeevan James</Copyright>
+        <PackageTags>dotnet-new;templates;jeevan</PackageTags>
 
-    <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
 
-    <IncludeContentInPack>true</IncludeContentInPack>
-    <IncludeBuildOutput>false</IncludeBuildOutput>
-    <ContentTargetFolders>content</ContentTargetFolders>
-	<NoDefaultExcludes>true</NoDefaultExcludes>
-  </PropertyGroup>
+        <!-- Package content settings -->
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <NoDefaultExcludes>true</NoDefaultExcludes>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <Content
-        Include="templates\**\*"
-        Exclude="templates\**\bin\**;templates\**\obj\**;templates\**\Symbol*" />
-    <Compile Remove="**\*" />
-  </ItemGroup>
+    <ItemGroup>
+        <Content Include="templates\**\*"
+            Exclude="templates\**\bin\**;templates\**\obj\**;templates\**\Symbol*" />
+        <Compile Remove="**\*" />
+    </ItemGroup>
 
 </Project>

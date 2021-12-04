@@ -31,6 +31,13 @@
             "replaces": "SymbolDescription",
             "defaultValue": ".NET Core tool console application",
             "description": "Description of the console tool application."
+        },
+        "framework": {
+            "type": "parameter",
+            "isRequired": false,
+            "replaces": "SymbolFramework",
+            "defaultValue": "net6.0",
+            "description": "Target framework of the console tool application."
         }
     }
 }
