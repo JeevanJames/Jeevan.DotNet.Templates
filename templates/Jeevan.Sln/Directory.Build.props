@@ -15,8 +15,8 @@
         <Authors>Jeevan James</Authors>
         <Company>Jeevan James</Company>
         <Product>SymbolProduct</Product>
-        <Copyright>Copyright (c) 2021 Jeevan James</Copyright>
-        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <Copyright>Copyright (c) $(CopyrightYears) Jeevan James</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/JeevanJames/SymbolRepository</PackageProjectUrl>
         <RepositoryUrl>https://github.com/JeevanJames/SymbolRepository.git</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
@@ -39,15 +39,15 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Roslynator.Analyzers" Version="3.3.0">
+        <PackageReference Include="Roslynator.Analyzers" Version="4.1.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="SonarAnalyzer.CSharp" Version="8.32.0.39516">
+        <PackageReference Include="SonarAnalyzer.CSharp" Version="8.38.0.46746">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.354">
+        <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.406">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
