@@ -30,7 +30,7 @@
             "type": "parameter",
             "isRequired": false,
             "replaces": "SymbolFramework",
-            "defaultValue": "net6.0",
+            "defaultValue": "net7.0",
             "description": "Target framework for the console application."
         }
     }
