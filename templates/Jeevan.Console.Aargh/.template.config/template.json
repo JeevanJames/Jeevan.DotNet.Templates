@@ -1,0 +1,43 @@
+﻿{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Jeevan James",
+    "classifications": [ "Jeevan", "Console", "Aargh" ],
+    "name": "Jeevan Aargh Console",
+    "identity": "Jeevan.Console.Aargh.CSharp",
+    "groupIdentity": "Jeevan.Console.Aargh",
+    "shortName": "jeevan-console-aargh",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "Jeevan.Console.Aargh",
+    "preferNameDirectory": true,
+    "symbols": {
+        "relativens": {
+            "type": "parameter",
+            "isRequired": true,
+            "replaces": "SymbolNamespace",
+            "description": "The namespace of this project, relative to the base namespace specified in the Directory.Build.props file."
+        },
+        "tool-name": {
+            "type": "parameter",
+            "isRequired": true,
+            "replaces": "SymbolToolName",
+            "description": "The name of the CLI command."
+        },
+        "description": {
+            "type": "parameter",
+            "isRequired": false,
+            "replaces": "SymbolDescription",
+            "defaultValue": "Aargh console application",
+            "description": "Description of the console application."
+        },
+        "framework": {
+            "type": "parameter",
+            "isRequired": false,
+            "replaces": "SymbolFramework",
+            "defaultValue": "net7.0",
+            "description": "Target framework for the console application."
+        }
+    }
+}

@@ -1,11 +1,12 @@
 @echo off
 setlocal
 
-if "%1"=="" goto error
-set version=%1
 set packageId=Jeevan.Templates
 set pushSource=https://www.myget.org/F/jeevanjames/api/v2/package
 set pullSource=https://www.myget.org/F/jeevanjames/api/v3/index.json
+
+if "%1"=="" goto error
+set version=%1
 
 echo %version%
 del *.nupkg /s
@@ -17,10 +18,12 @@ goto restore_help
 
 :error
 echo Please specify version
-echo Usage: install-package [version]
+echo Usage: %0 [version]
+nuget search %packageId% -Source %pullSource%
 
 :restore_help
 echo.
 echo Restore command:
-echo dotnet new -u %packageId%
-echo dotnet new -i %packageId% --nuget-source %pullSource%
+echo dotnet new uninstall %packageId%
+echo dotnet new install %packageId% --add-source %pullSource%
+echo dotnet new install %packageId% --add-source %pullSource% | clip
