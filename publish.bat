@@ -26,4 +26,4 @@ echo.
 echo Restore command:
 echo dotnet new uninstall %packageId%
 echo dotnet new install %packageId% --add-source %pullSource%
-echo dotnet new install %packageId% --add-source %pullSource% | clip
+echo dotnet new install %packageId%::%version% --add-source %pullSource% | clip

@@ -1,22 +1,20 @@
-using System.Reflection;
-
 namespace SymbolNamespace;
 
 internal sealed class EntryPoint : ConsoleProgram
 {
-    protected override void HandleCommand()
+    public override ValueTask HandleCommandAsync(IParseResult parseResult)
     {
-        if (Version)
-        {
-            Assembly asm = Assembly.GetEntryAssembly() ??
-                throw new InvalidOperationException("Cannot load program assembly.");
-            MarkupLineInterpolated($"Version: {asm.GetName().Version}");
-        }
-        else
-            DisplayHelp();
+        MarkupLine("Use this method for async logic.");
+        return ValueTask.CompletedTask;
     }
 
-    [Flag("version", "v",
-        HelpText = "Displays the version of the application.")]
-    public bool Version { get; set; }
+    protected override void HandleCommand(IParseResult parseResult)
+    {
+        MarkupLine("Use this method for sync logic with access to the parse result.");
+    }
+
+    protected override void HandleCommand()
+    {
+        MarkupLine("Use this method for sync logic.");
+    }
 }

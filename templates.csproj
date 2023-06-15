@@ -10,7 +10,7 @@
         <Authors>Jeevan James</Authors>
         <Company>Jeevan James</Company>
         <Product>Jeevan dotnet new templates</Product>
-        <Copyright>Copyright (c) 2020-2021 Jeevan James</Copyright>
+        <Copyright>Copyright (c) 2020-2023 Jeevan James</Copyright>
         <PackageTags>dotnet-new;templates;jeevan</PackageTags>
 
         <TargetFramework>netstandard2.0</TargetFramework>
