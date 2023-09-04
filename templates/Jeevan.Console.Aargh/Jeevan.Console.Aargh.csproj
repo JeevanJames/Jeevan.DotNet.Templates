@@ -10,8 +10,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Aargh" Version="0.1.9" />
-        <PackageReference Include="Aargh.Extensions.SpectreConsole" Version="0.1.9" />
+        <PackageReference Include="Aargh" Version="0.1.10" />
+        <PackageReference Include="Aargh.Extensions.SpectreConsole" Version="0.1.10" />
         <PackageReference Include="Spectre.Console" Version="0.47.0" />
     </ItemGroup>
 
