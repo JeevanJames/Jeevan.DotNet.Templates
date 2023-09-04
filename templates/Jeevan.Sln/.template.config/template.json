@@ -30,6 +30,13 @@
             "isRequired": true,
             "replaces": "SymbolRepository",
             "description": "The repository name for this solution."
+        },
+        "copyright-years": {
+            "type": "parameter",
+            "isRequired": false,
+            "replaces": "SymbolCopyrightYears",
+            "defaultValue": "2023",
+            "description": "The copyright year or years to apply to various files."
         }
     }
 }

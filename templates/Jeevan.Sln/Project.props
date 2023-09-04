@@ -4,7 +4,7 @@
         <BaseNamespace>SymbolNamespace</BaseNamespace>
         <Product>SymbolProduct</Product>
         <RepositoryName>SymbolRepository</RepositoryName>
-        <CopyrightYears>2023</CopyrightYears>
+        <CopyrightYears>SymbolCopyrightYears</CopyrightYears>
     </PropertyGroup>
 
 </Project>
